@@ -258,7 +258,11 @@ $this->endWidget();
 
 <?php 
 
-$exeatdata=new CActiveDataProvider('Exeat');
+$exeatdata=new CActiveDataProvider('Exeat', array(
+    'criteria'=>array(
+        'condition'=>'student='.$student->id,
+        
+    )));
 $this->widget('bootstrap.widgets.TbGridView', array(
 	'id' => 'student-grid',
 	'dataProvider' => $exeatdata,

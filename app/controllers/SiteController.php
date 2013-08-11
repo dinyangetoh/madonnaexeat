@@ -20,6 +20,24 @@ class SiteController extends GxController
 		$this->render('index');
 	}
 
+        public function actionAbout()
+	{
+            
+            if(Yii::app()->user->isGuest){
+            $this->layout='//layouts/column1';
+            }
+		$this->render('about');
+	}
+        public function actionTeam()
+	{
+            
+            if(Yii::app()->user->isGuest){
+            $this->layout='//layouts/column1';
+            }
+		$this->render('team');
+	}
+
+
 	/**
 	 * This is the action to handle external exceptions.
 	 */

@@ -25,7 +25,7 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
-		
+		<link rel="icon" href="<?php echo Yii::app()->request->baseUrl; ?>/img/favicon.ico" type="image/vnd.microsoft.icon" sizes="16x16"> 
 
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap-responsive.css">
@@ -70,7 +70,7 @@
 				<ul class="nav">
 					<li class="active"><a href="<?php echo Yii::app()->request->baseUrl; ?>">Home</a></li>
 					<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/about">About</a></li>
-					<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/contributors">Contributors</a></li>
+					<li><a href="<?php echo Yii::app()->request->baseUrl; ?>/site/team">Contributors</a></li>
 					
 				</ul>
                             <?php if(Yii::app()->user->isGuest){ ?>
@@ -118,7 +118,7 @@ echo $content; ?>
 
 <div class="container">
 <footer class="footer">
-<p align="center">Copyright &copy; <?php echo date('Y'); ?> | Powered by Safehaven Technologies</p>
+    <p align="center">Copyright &copy; <?php echo date('Y'); ?> All rights reserved  | <strong>Development Team: <i>Onyenakazi Chisom, Edewusi Olubukola, Inyangetoh Patrick</i></strong></p>
 </div>
 </footer>
 
